@@ -1,0 +1,19 @@
+/* Write your CSS here */
+.filter-item {
+  display: flex;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #0f172a;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+
+.Active {
+  border: 2px solid #0284c7;
+  border-radius: 10px;
+  padding: 4px 18px 4px 18px;
+  color: #0284c7;
+}
