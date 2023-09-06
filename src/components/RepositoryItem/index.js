@@ -15,7 +15,7 @@ const RepositoryItem = props => {
           className="sfi-img"
           alt="stars"
         />
-        <p className="sfi-count">{starsCount}</p>
+        <p className="sfi-count">{starsCount} stars</p>
       </div>
       <div className="sfi-container">
         <img
@@ -23,7 +23,7 @@ const RepositoryItem = props => {
           className="sfi-img"
           alt="forks"
         />
-        <p className="sfi-count">{forksCount}</p>
+        <p className="sfi-count">{forksCount} forks</p>
       </div>
       <div className="sfi-container">
         <img
@@ -31,7 +31,7 @@ const RepositoryItem = props => {
           className="sfi-img"
           alt="open issues"
         />
-        <p className="sfi-count">{issuesCount}</p>
+        <p className="sfi-count">{issuesCount} issues</p>
       </div>
     </li>
   )

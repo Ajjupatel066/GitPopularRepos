@@ -35,6 +35,7 @@ class GithubPopularRepos extends Component {
 
   renderRepositoryList = async () => {
     const {activeFilter} = this.state
+    this.setState({apiStatus: apiStatusConstants.inProgress})
     const response = await fetch(
       `https://apis.ccbp.in/popular-repos?language=${activeFilter}`,
     )
@@ -58,7 +59,7 @@ class GithubPopularRepos extends Component {
   }
 
   changeActiveFilter = id => {
-    this.setState({activeFilter: id})
+    this.setState({activeFilter: id}, this.renderRepositoryList)
   }
 
   renderRepositoriesList = () => {

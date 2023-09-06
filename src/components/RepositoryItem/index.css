@@ -57,14 +57,17 @@
     font-weight: 500;
   }
   .sfi-container {
-    width: 100px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 200px;
+    margin-left: 20px;
   }
   .sfi-img {
     height: 18px;
     width: 18px;
+    margin-right: 15px;
   }
   .sfi-count {
     color: #1e293b;
